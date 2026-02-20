@@ -2,8 +2,9 @@
 Chiara Baldini, Melanie Turano, Zeno Tamagni
 
 ## Title of the project
-Clear Skies, Clear Signs?
-The Impact of Weather on UFO Sightings
+**Clear Skies, Clear Signs?**
+
+_The Impact of Weather on UFO Sightings_
 
 
 ## Project Brief
