@@ -8,7 +8,7 @@ _The Impact of Weather on UFO Sightings_
 
 
 ## Project Brief
-**Overview & Research Question
+**Overview & Research Question**
 For decades, the UFO phenomenon has captured the public imagination, generating thousands of reports worldwide. However, how much do environmental factors influence these testimonies?
 
 Our research stems from a fundamental question:
