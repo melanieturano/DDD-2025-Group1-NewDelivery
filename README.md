@@ -79,6 +79,7 @@ The final result is actually composed of two different visualizations, the first
 Visualisation 1: It relates months, countries, weather conditions, and shapes of UFO sightings in 2012, highlighting recurring patterns across time and space.In this case, the portion of data taken into consideration is larger but always chosen according to the functionality of the visualization. The year 2012 was chosen because it had the most sightings recorded so far and the countries relevant for data importance were selected. 
 
 Visualisation 2: We wanted to include the second visualization to explore data that, almost to the end, we left in the background but also to be able to provide a focus on the United States, a country with a lot of data to work on. In this second visualization we asked whether the total amount of sightings, latitude, and duration of the sighting were somehow related to understand whether, observation distance, and duration play a role in what people see and how they interpret it
+![Cover v0 04-2](https://github.com/user-attachments/assets/955056f5-f576-4c86-9ed2-a336d27b3179)
 
 
 **Insights**
