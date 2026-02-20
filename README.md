@@ -8,6 +8,7 @@ _The Impact of Weather on UFO Sightings_
 
 
 ## Project Brief
+
 **Overview & Research Question**
 
 For decades, the UFO phenomenon has captured the public imagination, generating thousands of reports worldwide. However, how much do environmental factors influence these testimonies?
@@ -23,12 +24,16 @@ To investigate this relationship and understand whether people perceive (or beli
 ## Data Collection
 **Where did you get your data from?**
 
+https://countriesnow.space/api/v0.1/countries
+https://archive-api.open-meteo.com/v1/archive
 
 
 **What’s your data about?**
+
 The project aims to explore our research question: Do weather conditions and sky visibility influence the perception and the number of recorded UFO sightings? To answer this, we started with the global historical dataset and enriched it with weather data. To keep the analysis focused and high-performing, we chose the year 2012, aggregating and reducing the massive amount of data into monthly and daily windows to analyze the relationship between sighting frequency and the specific weather of those days.
 
 **Who is/are the sources/creators of your data?**
+
 Our final dataset is the result of a hybrid approach that combines a historical archive with historical weather data. The two main sources are:
 
 Kaggle: We used a comprehensive aggregated dataset containing over 80,000 historical UFO sighting reports from various global sources.
@@ -39,10 +44,12 @@ Open-Meteo API: To enrich the sightings data, we relied on this open-source API 
 
 ## Data Organisation
 **Have you combined data from different sources? How did you merge them?**
+
 Absolutely. The process required a careful data merging phase. We started with the Kaggle macro-dataset (over 80,000 records) and used the dates and locations of the sightings as search keys to query the Open-Meteo API. Once the corresponding weather data was extracted, we merged the two information streams. Finally, we filtered everything for the year 2012 and structured the result into a single, optimized JSON file ready for the visualization phase.
 
 
 **What columns are more relevant for your project?**
+
 To maintain focus on our research, the most crucial variables (columns) extracted from the combined dataset are three:
 
 • **Country (or Geographic Area):** To spatially map the events.
@@ -51,6 +58,7 @@ To maintain focus on our research, the most crucial variables (columns) extracte
 
 
 **Have you used any AI-based tool to understand or manipulate your data? if yes, what and how**
+
 Yes, to optimize the data wrangling and synthesis process, we integrated Google AI Studio. Artificial intelligence supported us in summarizing and structuring the massive initial dataset (the original 80,000 records), facilitating the extraction of the relevant variables.
 
 
