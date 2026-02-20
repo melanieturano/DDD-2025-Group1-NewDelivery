@@ -35,6 +35,8 @@ Research question:
 ## Data visualisation
 **Data visualisation description**
 
+**Insights**
+
 
 
 **Diagram Protocol**
