@@ -90,11 +90,13 @@ Visualisation 2: We wanted to include the second visualization to explore data t
 - People are drawn to what they see in the sky regardless of weather conditions. The number of sightings shows how, at least for American citizens, interest in this type of phenomenon is constant over time.
 - While there may be adverse weather conditions, people easily identify the generic shape and characteristics of what they see, making the sighting likely more real to the beholder
 - The United States dominates in terms of number of sightings (and this is a trend that, if you look at the dataset in its entirety, is constant). Other recurrent countries are Canada and the United Kingdom. We asked ourselves why the United States has such a large number of sightings: we don't have a definitive answer because this wasn't the focus of the visualization, but we believe that cultural and social factors, as well as the massive presence of government structures, can influence this number. Furthermore, in the United States, the archiving (through official government channels or not) of UFO sightings is much more present than in other states and this is demonstrated by the ease with which it is easy to find data on the USA.
+![Cover v0 04](https://github.com/user-attachments/assets/19021c2a-3bcc-4a84-93e0-abfa916b481b)
 
 **Visualisation 2:**
 - The average latitude between states appears to be constant, consequently this environmental factor does not affect the perception of a sighting.
 - States with the highest number of sightings do not necessarily have the longest average duration of them. California, for example, the country with the highest number of sightings, is surpassed by the Missipi with a duration of more than double, a similar latitude but a significantly lower number of sightings. This trend can also be seen when comparing other States. One wonders therefore whether, the quantity of the number of sightings, is so important in the search for trends.
 - In July 2012 alone, the number of sightings in the United States was extremely high. The states that, by area, are larger, are also those with the highest sightings. Alaska makes exceptions but we believe this is because, although it is the largest state by area, it is probably also the least densely populated.
+![Cover v0 04-1](https://github.com/user-attachments/assets/07af991e-f9de-4384-acca-4e329c13148c)
 
 **Diagram Protocol**
 
