@@ -24,8 +24,12 @@ To investigate this relationship and understand whether people perceive (or beli
 ## Data Collection
 **Where did you get your data from?**
 
-https://countriesnow.space/api/v0.1/countries
-https://archive-api.open-meteo.com/v1/archive
+- https://countriesnow.space/api/v0.1/countries
+- https://archive-api.open-meteo.com/v1/archive
+- https://www.kaggle.com/datasets/sahityasetu/ufo-sightings
+- https://www.archives.gov/research/topics/uaps
+- https://www.britannica.com/topic/unidentified-flying-object
+
 
 
 **What’s your data about?**
@@ -45,7 +49,7 @@ Open-Meteo API: To enrich the sightings data, we relied on this open-source API 
 ## Data Organisation
 **Have you combined data from different sources? How did you merge them?**
 
-Absolutely. The process required a careful data merging phase. We started with the Kaggle macro-dataset (over 80,000 records) and used the dates and locations of the sightings as search keys to query the Open-Meteo API. Once the corresponding weather data was extracted, we merged the two information streams. Finally, we filtered everything for the year 2012 and structured the result into a single, optimized JSON file ready for the visualization phase.
+The process required a careful data merging phase. We started with the Kaggle macro-dataset (over 80,000 records) and used the dates and locations of the sightings as search keys to query the Open-Meteo API. Once the corresponding weather data was extracted, we merged the two information streams. Finally, we filtered everything for the year 2012 and structured the result into a single, optimized JSON file ready for the visualization phase. Dataset reduction work was required throughout the project. Many of the data we used represent an average of a given feature over a given period (e.g. average weather conditions for January 2012 in Canada).
 
 
 **What columns are more relevant for your project?**
@@ -59,16 +63,33 @@ To maintain focus on our research, the most crucial variables (columns) extracte
 
 **Have you used any AI-based tool to understand or manipulate your data? if yes, what and how**
 
-Yes, to optimize the data wrangling and synthesis process, we integrated Google AI Studio. Artificial intelligence supported us in summarizing and structuring the massive initial dataset (the original 80,000 records), facilitating the extraction of the relevant variables.
+Yes, to optimize the data wrangling and synthesis process, we integrated Google AI Studio. Artificial intelligence supported us in summarizing and structuring the massive initial dataset (the original 80,000 records), facilitating the extraction of the relevant variables. 
 
 
 
 ## Data visualisation
 **Data visualisation description**
 
+The final result is actually composed of two different visualizations, the first: broader but focused on the visualization of possible patterns that relate sightings and weather conditions, and the second: focused only a more specific portion of data related to environmental conditions but interesting to us.
+
+Visualisation 1: It relates months, countries, weather conditions, and shapes of UFO sightings in 2012, highlighting recurring patterns across time and space.In this case, the portion of data taken into consideration is larger but always chosen according to the functionality of the visualization. The year 2012 was chosen because it had the most sightings recorded so far and the countries relevant for data importance were selected. 
+
+Visualisation 2: We wanted to include the second visualization to explore data that, almost to the end, we left in the background but also to be able to provide a focus on the United States, a country with a lot of data to work on. In this second visualization we asked whether the total amount of sightings, latitude, and duration of the sighting were somehow related to understand whether, observation distance, and duration play a role in what people see and how they interpret it
+
+
 **Insights**
 
+**Visualisation 1:**
 
+- According to our visualization, weather conditions do not have a major influence on what people see and interpret as UFO phenomena. It's clear that sky conditions aren't important; even overcast skies don't compromise people's visibility, confusing them. 
+- People are drawn to what they see in the sky regardless of weather conditions. The number of sightings shows how, at least for American citizens, interest in this type of phenomenon is constant over time.
+- While there may be adverse weather conditions, people easily identify the generic shape and characteristics of what they see, making the sighting likely more real to the beholder
+- The United States dominates in terms of number of sightings (and this is a trend that, if you look at the dataset in its entirety, is constant). Other recurrent countries are Canada and the United Kingdom. We asked ourselves why the United States has such a large number of sightings: we don't have a definitive answer because this wasn't the focus of the visualization, but we believe that cultural and social factors, as well as the massive presence of government structures, can influence this number. Furthermore, in the United States, the archiving (through official government channels or not) of UFO sightings is much more present than in other states and this is demonstrated by the ease with which it is easy to find data on the USA.
+
+**Visualisation 2:**
+- The average latitude between states appears to be constant, consequently this environmental factor does not affect the perception of a sighting.
+- States with the highest number of sightings do not necessarily have the longest average duration of them. California, for example, the country with the highest number of sightings, is surpassed by the Missipi with a duration of more than double, a similar latitude but a significantly lower number of sightings. This trend can also be seen when comparing other States. One wonders therefore whether, the quantity of the number of sightings, is so important in the search for trends.
+- In July 2012 alone, the number of sightings in the United States was extremely high. The states that, by area, are larger, are also those with the highest sightings. Alaska makes exceptions but we believe this is because, although it is the largest state by area, it is probably also the least densely populated.
 
 **Diagram Protocol**
 
@@ -78,68 +99,58 @@ Title: DDD Project process - Chiara Baldini, Melanie Turano, Zeno Tamagni
 ---
 
 flowchart TD
-Start[Brief] --> Research1{Research on internet}
-Research1 -.-> Topic1[Image of aliens over the years]
-Research1 -.-> Topic2[UFO]
-Research1 ---> Topic3[Relationship between religion and extraterrestrial life]
-Topic3 --> GeneralQuestion([What social transformations would follow in the discovery of a connection between the divine and extraterrestrial civilizations?])
-GeneralQuestion --> Research2{Internet Research}
-Research2 --> Topic4[Alien in history]
-Research2 --> Topic5[Mauro Biglinos Theories]
-Research2 --> Topic6[Ancient astronauts theory]
-Research2 --> Topic7[UFO religion]
-Topic5 --> BiglinoAnalysis[Analysis of Biglinos book La Bibbia non parla di Dio]
-BiglinoAnalysis --> Theories{{Biglino argues that the current theological interpretation of the Old Testament has been piloted over the years and that, if one analyzes the original Hebrew text, the narrative that emerges is markedly different}}
-Theories --> Bible[Investigation related to current theological interpretations]
-Theories --> Terms{{Many terms would suggest that God are actually multiple extraterrestrial figures who have come to Earth numerous times throughout history}}
-Theories --> AI1((Using AI tools to help understand the most relevant words in Biglino search))
-Theories --> AI2((Using AI tools to help us combine Biglino's interpretations with classical theological interpretations))
-Terms --> SpecificQuestion([Are there elements within the Hebrew version of the Old Testament that suggest that God is not actually a spiritual being but an extraterrestrial being?])
-SpecificQuestion --> GeneralQuestion
-Topic6 --> Statement{{Theories that hypothesize contact between aliens and ancient civilizations such as the Sumerians and Egyptians}}
-Statement --> Theories 
-Topic7 --> Belief{{Faith that believes that aliens visit Earth via UFOs and are capable of intervening on the human population with the aim of allowing humans to live well}}
-SpecificQuestion --> DatasetCreation[(Dataset)]
-Bible --> DatasetCreation
-AI1 --> DatasetCreation
-AI2 --> DatasetCreation
-DatasetCreation --> TermsColumn[/Relevant Terms chosen\]
-DatasetCreation --> TraditionalColumn[/Traditional Interpretation\]
-DatasetCreation --> BiglinoColumn[/Biglinos Interpretation\]
-DatasetCreation --> ThemeColumn[/Topic of term\]
-DatasetCreation --> BiblicalColumn[/Biblical reference: Book, Chapter, Verse\]
-TermsColumn --> DataViz[[Data visualisation creation starting from a Bubblechart combined with a Linear Dendogram]]
-TraditionalColumn --> DataViz[[Data visualisation creation starting from a Bubblechart combined with a Linear Dendogram]]
-BiglinoColumn --> DataViz[[Data visualisation creation starting from a Bubblechart combined with a Linear Dendogram]]
-ThemeColumn --> DataViz[[Data visualisation creation starting from a Bubblechart combined with a Linear Dendogram]]
-BiblicalColumn --> DataViz[[Data visualisation creation starting from a Bubblechart combined with a Linear Dendogram]]
-DataViz --> Explanation1{{This visualization reinterprets sacred Hebrew terms through a contemporary, tech-inspired lens, transforming religious language into a speculative, hierarchical concept map.}}
-DataViz -.-> Notrealised1[[Alluvial diagram]]
-DataViz -.-> Notrealised2[[Circle Packing]]
-DataViz -.-> Notrealised3[[Chord Diagram]]
-DataViz --> Website
-Website --> Explanation2{{The website documents the project, providing access to the visualization, dataset, resources, and its aesthetic context.}}
+Start[Brief] --> Research1{Brainstorming}
+Research1 -.-> Topic1[Space missions]
+Research1 -.-> Topic2[Evolution of the representation of the alien figure]
+Research1 ---> Topic3[Frequency of UFO sightings over time]
+Research1 -.-> Topic4[Meteorites on Earth]
+Research1 -.-> Topic5[News about alien in social media]
+Topic3 --> Research2{Internet Research}
+Research2{Internet Research} --> UFO1[UFO Definition]
+Research2{Internet Research} --> UFO2[UFO Sightings history]
+Research2{Internet Research} --> UFO3[UFO Sightings archives]
+Research2{Internet Research} --> UFO4[UFO Sighthings dataset]
+UFO3[UFO Sightings archives] --> Insight1{{The most extensive archives are American}}
+UFO4[UFO Sighthings dataset] --> Tool1((Kaggle))
+Tool1 --> Insight1{{Most kaggle dataset are based on American archives}}
+Tool1 --> Dataset1[(Premade Dataset of UFO sightings)]
+Dataset1[(Premade Dataset of UFO sightings)] --> Research3{Internet Research for weather data}
+Research3{Internet Research for weather data} --> Tool2((API))
+Tool2((API)) --> Tool3((Webapp with API))
+Tool3{Webapp with API} --> Tool4((JSON with weather data))
+Tool4((JSON with weather data)) --> Merge{Merge Original dataset with JSON} 
+Merge{Merge Original dataset with JSON} --> AItool((+AI)) 
+Merge{Merge Original dataset with JSON} --> Dataset2[(Final Dataset)]
+AItool((+AI - used just to help with merging, not for interpretation)) --> Dataset2[(Final Dataset)]
+Dataset2[(Final Dataset)] --> Column1[/Sightings date: GG,MM, YYYY + time\]
+Dataset2[(Final Dataset)] --> Column2[/Sightings place: Country, Region, Locality\]
+Dataset2[(Final Dataset)] --> Column3[/Latitude\]
+Dataset2[(Final Dataset)] --> Column4[/Longitude\]
+Dataset2[(Final Dataset)] --> Column5[/UFO shape\]
+Dataset2[(Final Dataset)] --> Column6[/Encounter duration\]
+Dataset2[(Final Dataset)] --> Column7[/Sighting description\]
+Dataset2[(Final Dataset)] --> Column8[/Weather conditions\]
+Dataset2[(Final Dataset)] --> Column9[/Temperature\]
+Column1[/Sightings date: GG,MM, YYYY + time\] -->  Dataviz1[[Data Visualisation 1]]
+Column2[/Sightings place: Country, Region, Locality\] -->  Dataviz1[[Data Visualisation 1]]
+Column8[/Weather conditions\] -->  Dataviz1[[Data Visualisation 1]]
+Column9[/Temperature\] -->  Dataviz1[[Data Visualisation 1]]
+Column3[/Latitude\] -->  Dataviz2[[Data Visualisation 2]]
+Column8[/Weather conditions\] -->  Dataviz2[[Data Visualisation 2]]
+Column1[/Sightings date: GG,MM, YYYY + time\] -->  Dataviz2[[Data Visualisation 2]]
+Column2[/Sightings place: Country, Region, Locality\] -->  Dataviz2[[Data Visualisation 2]]
+Dataviz1[[Data Visualisation 1]] --> Graph1[Matrix plot + Linear dendogram]
+Dataviz2[[Data Visualisation 2]] --> Graph2[Treemap]
+Graph1[Matrix plot + Linear dendogram] --> Insight2{{Weather: minimal influence}}
+Graph1[Matrix plot + Linear dendogram] --> Insight3{{Interest constant}}
+Graph1[Matrix plot + Linear dendogram] --> Insight4{{Shapes easily recognized}}
+Graph1[Matrix plot + Linear dendogram] --> Insight5{{USA dominant: cultural + data collection factors?}}
+Graph2[Treemap] --> Insight6{{Latitude: irrelevant}}
+Graph2[Treemap] --> Insight7{{Number ≠ duration}}
+Graph2[Treemap] --> Insight8{{July peak + larger states more sightings}}
 
-style Topic1 fill:#ffa500;
-style Topic2 fill:#ffa500;
-style GeneralQuestion fill:#008b8b;
-style Theories fill:#ffd1dc;
-style Statement fill:#ffd1dc;
-style Belief fill:#ffd1dc;
-style Terms fill:#ffd1dc;
-style AI1 fill:#fffeef;
-style AI2 fill:#fffeef;
-style DatasetCreation fill:#874dbf;
-style TermsColumn fill:#cbb8b7;
-style TraditionalColumn fill:#cbb8b7;
-style BiglinoColumn fill:#cbb8b7;
-style ThemeColumn fill:#cbb8b7;
-style BiblicalColumn fill:#cbb8b7;
-style SpecificQuestion fill:#008b8b;
-style Notrealised1 fill:#d7d7d7;
-style Notrealised1 stroke:#d7d7d7;
-style Notrealised2 stroke-dasharray: 5 5, fill:#ffa500;
-style Notrealised3 stroke-dasharray: 5 5, fill:#ffa500;
-style DataViz fill:#874dbf;
-style Explanation1 fill:#ffd1dc;
-style Explanation2 fill:#ffd1dc;
+
+style Topic1 fill:#d7d7d7;
+style Topic2 fill:#d7d7d7;
+style Topic4 fill:#d7d7d7;
+style Topic5 fill:#d7d7d7;
