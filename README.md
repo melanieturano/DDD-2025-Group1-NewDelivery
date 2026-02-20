@@ -65,6 +65,10 @@ To maintain focus on our research, the most crucial variables (columns) extracte
 
 Yes, to optimize the data wrangling and synthesis process, we integrated Google AI Studio. Artificial intelligence supported us in summarizing and structuring the massive initial dataset (the original 80,000 records), facilitating the extraction of the relevant variables. 
 
+**Dataset link**
+https://docs.google.com/spreadsheets/d/18ZN4f5_oZRyKbPCFyr8tjh_a5oHMh-amvW1jfpoRoMU/edit?usp=sharing
+https://docs.google.com/spreadsheets/d/1xMLqIReSESHn3ojaJo9LaCiJYzlLHo7nMDsQVLkTA0w/edit?usp=sharing
+
 
 
 ## Data visualisation
