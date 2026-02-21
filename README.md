@@ -6,7 +6,7 @@ Chiara Baldini, Melanie Turano, Zeno Tamagni
 
 _The Impact of Weather on UFO Sightings_
 
-Project link Figma: https://www.figma.com/design/8Dx8lQeiphQ76MBRV3kX17/Untitled?node-id=0-1&t=FCiNebnfGFxLGf3K-1
+Project link Figma: https://www.figma.com/design/ubtTxETkCuikdPBiO0MfaU/DDD---New-assignment?node-id=0-1&t=x3oVstW0YUX9ilOC-1
 
 
 ## Project Brief
